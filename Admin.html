@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript CRUD Example Tutorial
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>Student Details</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Student Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Enrollment.NO</label><label class="validation-error hide" id="fullNameValidationError">Enrollment is required.</label>
+                        <input type="text" name="enroll" id="enroll">
+                    </div>
+                    <div>
+                        <label>Department</label>
+                        <input type="text" name="dept" id="dept">
+                    </div>
+                    <div>
+                        <label>Mathematics</label>
+                        <input type="text" name="Math" id="Math">
+                    </div>
+                    <div>
+                        <label>Basics of IT</label>
+                        <input type="text" name="IT" id="IT">
+                    </div>
+                    <div>
+                        <label>Environmental Science</label>
+                        <input type="text" name="es" id="es">
+                    </div>
+                    <div>
+                        <label>Engineering Graphics</label>
+                        <input type="text" name="EG" id="EG">
+                    </div>
+                   
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Enrollment.No</th>
+                            <th>Department</th>
+                            <th>Mathematics</th>
+                            <th>Basics of IT</th>
+                            <th>Environmental Science</th>
+                            <th>Engineering Graphics</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
